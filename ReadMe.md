@@ -63,6 +63,9 @@ Receives an char array and returns its length.
 
 <details>
     <summary><b>memset</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/9719fe53-08f0-462f-b9a1-b16a36a0e2e0"/>
+</p>
 Fills n memory positions with the character received in c. Converts the received array to a character array and c to a character.
 </details>
 
