@@ -66,7 +66,7 @@ Receives an array of characters and returns its length.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/9719fe53-08f0-462f-b9a1-b16a36a0e2e0"/>
 </p>
-Fills <b>n</b> memory positions with the character received in c.
+Fills <b>n</b> memory positions with the character received in <b>c</b>.
 </details>
 
 <details>
@@ -90,7 +90,7 @@ Function that copies <b>n</b> bytes of memory from <b>src</b> to <b>dst</b>. The
 <p align="center">
     <img src="https://github.com/user-attachments/assets/12c7186d-dc06-4241-ba89-6d5dd5016291"/>
 </p>
-Function that copies <b>n</b> bytes of memory from <b>src</b> to <b>dst</b>. It is used when we are not sure if the memory positions can overlap. Returns a pointer to the destination. If the destination is greater, it copies the values from <b>n</b> down to 1. If the destination is equal to or smaller than src, it copies the memory positions from 0 to <b>n</b>.
+Function that copies <b>n</b> bytes of memory from <b>src</b> to <b>dst</b>. It is used when we are not sure if the memory positions can overlap. Returns a pointer to the destination. If the destination is greater, it copies the values from <b>n</b> down to 1. If the destination is equal to or smaller than <b>src</b>, it copies the memory positions from 0 to <b>n</b>.
 </details>
 
 <details>
@@ -114,7 +114,7 @@ Concatenates <b>src</b> and <b>dst</b> as long as there is available space in <b
 <p align="center">
     <img src="https://github.com/user-attachments/assets/6975bd5a-cfc3-4328-aa74-c9d67704e65a"/>
 </p>
-If it is a lowercase character, it returns its decimal value in uppercase.
+If <b>c</b> is a lowercase character, it returns its decimal value in uppercase.
 </details>
 
 <details>
@@ -122,7 +122,7 @@ If it is a lowercase character, it returns its decimal value in uppercase.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/5a1c9010-85aa-4d4a-9447-843597f2adbf"/>
 </p>
-If it is an uppercase character, it returns its decimal value in lowercase.
+If <b>c</b> is an uppercase character, it returns its decimal value in lowercase.
 </details>
 
 <details>
@@ -200,7 +200,7 @@ Returns a pointer to a new string that is a duplicate of the string <b>src</b>. 
 <details>
     <summary><b>substr</b></summary>
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/f8c01ea7-2319-4d7e-9792-850a696ee471)"/>
+    <img src="https://github.com/user-attachments/assets/f8c01ea7-2319-4d7e-9792-850a696ee471"/>
 </p>
 Allocates memory with malloc and returns a string that starts at position <b>start</b> and has a maximum size of <b>len</b>. If <b>s</b> is NULL or <b>start</b> is greater than the length of <b>s</b>, or if <b>len</b> is 0, it creates a string that only contains '\0' and returns that string. If len is greater than the length of <b>s</b> minus <b>start</b>, we need to adjust <b>len</b> since there are not enough positions to write.
 </details>
@@ -296,7 +296,7 @@ Writes the integer number <b>n</b> to the file descriptor <b>fd</b>.
 <details>
     <summary><b>lstnew</b></summary>
 <p align="center">
-    <img src=""/>
+    <img src="https://github.com/user-attachments/assets/0325ebc1-50bb-40c0-a0cf-34c601d29fae"/>
 </p>
 Allocates memory with malloc and creates a new list node of a certain size. The variable <b>content</b> is initialized with the value passed as parameter <b>content</b>. The variable <b>next</b> is initialized to NULL. Returns the new node.
 </details>
@@ -304,7 +304,7 @@ Allocates memory with malloc and creates a new list node of a certain size. The 
 <details>
     <summary><b>lstadd_front</b></summary>
 <p align="center">
-    <img src=""/>
+    <img src="https://github.com/user-attachments/assets/dfae76d1-e261-4ed5-a234-218648316834"/>
 </p>
 Adds a new node at the beginning of the list. Receives <b>lst</b>, a pointer to the first node of the list and adds the node new at the front.
 </details>
@@ -312,7 +312,7 @@ Adds a new node at the beginning of the list. Receives <b>lst</b>, a pointer to 
 <details>
     <summary><b>lstsize</b></summary>
 <p align="center">
-    <img src=""/>
+    <img src="https://github.com/user-attachments/assets/4076e9f3-1b25-425b-995e-4070751e0a61"/>
 </p>
 Counts the number of elements on the list <b>lst</b> and returns that number.
 </details>
@@ -320,7 +320,7 @@ Counts the number of elements on the list <b>lst</b> and returns that number.
 <details>
     <summary><b>lstlast</b></summary>
 <p align="center">
-    <img src=""/>
+    <img src="https://github.com/user-attachments/assets/dad43bb1-4bf9-4eab-946c-afeea9f1d14b"/>
 </p>
 Returns the last node of the list.
 </details>
@@ -328,7 +328,7 @@ Returns the last node of the list.
 <details>
     <summary><b>lstadd_back</b></summary>
 <p align="center">
-    <img src=""/>
+    <img src="https://github.com/user-attachments/assets/77f3434e-2fee-4779-972f-34ae31a8bca7"/>
 </p>
 Adds a new node at the end of the list. Receives <b>lst</b>, a pointer to the last node of the list, and adds the node <b>new</b> at the back.
 </details>
@@ -336,7 +336,7 @@ Adds a new node at the end of the list. Receives <b>lst</b>, a pointer to the la
 <details>
     <summary><b>lstdelone</b></summary>
 <p align="center">
-    <img src=""/>
+    <img src="https://github.com/user-attachments/assets/c244e57b-00a4-4dc6-b12d-a6dedee82720"/>
 </p>
 Receives as a parameter <b>lst</b>, a node that will be deleted. Uses the function del to delete the content and frees its memory using free.
 </details>
@@ -344,7 +344,7 @@ Receives as a parameter <b>lst</b>, a node that will be deleted. Uses the functi
 <details>
     <summary><b>lstclear</b></summary>
 <p align="center">
-    <img src=""/>
+    <img src="https://github.com/user-attachments/assets/2a8a1497-53c6-4044-97e9-dc8e2a067fa4"/>
 </p>
 Receives as a parameter <b>lst</b>, a pointer to a node that will be deleted. Deletes all successor nodes using the function <b>del</b> and frees the allocated memory using free. In the end, the pointer to the list should be set to NULL.
 </details>
@@ -352,7 +352,7 @@ Receives as a parameter <b>lst</b>, a pointer to a node that will be deleted. De
 <details>
     <summary><b>lstiter</b></summary>
 <p align="center">
-    <img src=""/>
+    <img src="https://github.com/user-attachments/assets/9bac1891-a05c-4d3d-a8d5-ff0e753bdd1f"/>
 </p>
 Receives the list <b>lst</b> and applies the function <b>f</b> to all elements contained in it.
 </details>
@@ -360,7 +360,7 @@ Receives the list <b>lst</b> and applies the function <b>f</b> to all elements c
 <details>
     <summary><b>lstmap</b></summary>
 <p align="center">
-    <img src=""/>
+    <img src="https://github.com/user-attachments/assets/14539ec9-fb15-4f6e-afa4-95ac2c10b2e8"/>
 </p>
 Receives the list <b>lst</b> and applies the function <b>f</b> to all elements contained in it. Creates a new list that will contain the results of applying function <b>f</b>. If any memory allocation fails, it uses <b>del</b> to free the allocated content of the created nodes.
 </details>
