@@ -18,7 +18,7 @@
 <p align="center">
     <img src="https://github.com/user-attachments/assets/452f3d8e-588c-49fd-b49e-f112aa8d2b91"/>
 </p>
-If c is a character, it returns its value in decimal.
+If <b>c</b> is a character, it returns its value in decimal.
 </details>
 
 <details>
@@ -26,7 +26,7 @@ If c is a character, it returns its value in decimal.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/014d5bc9-2139-4b14-a16f-d79e60a54d54"/>
 </p>
-If c is a digit, it returns its value in decimal.
+If <b>c</b> is a digit, it returns its value in decimal.
 </details>
 
 <details>
@@ -34,7 +34,7 @@ If c is a digit, it returns its value in decimal.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/518078bb-6989-4565-83a1-301fc6164d0e"/>
 </p>
-If c is a digit or a character, it returns its value in decimal.
+If <b>c</b> is a digit or a character, it returns its value in decimal.
 </details>
 
 <details>
@@ -42,7 +42,7 @@ If c is a digit or a character, it returns its value in decimal.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/5b866d3d-f37b-4322-a835-67d8e01131fc"/>
 </p>
-If c belongs to the ASCII table, it returns its value in decimal.
+If <b>c</b> belongs to the ASCII table, it returns its value in decimal.
 </details>
 
 <details>
@@ -50,7 +50,7 @@ If c belongs to the ASCII table, it returns its value in decimal.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/e456327e-1f83-4e6d-863b-6e947f703ee0"/>
 </p>
-If c is a character that can be printed (greater than 32 and less than 127), it returns its value.
+If <b>c</b> is a character that can be printed (greater than 32 and less than 127), it returns its value.
 </details>
 
 <details>
@@ -58,7 +58,7 @@ If c is a character that can be printed (greater than 32 and less than 127), it 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/565db10b-1a4c-41a6-a4f0-1737f320d37f"/>
 </p>
-Receives an char array and returns its length.
+Receives an array of characters and returns its length.
 </details>
 
 <details>
@@ -66,7 +66,7 @@ Receives an char array and returns its length.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/9719fe53-08f0-462f-b9a1-b16a36a0e2e0"/>
 </p>
-Fills n memory positions with the character received in c. Converts the received array to a character array and c to a character.
+Fills <b>n</b> memory positions with the character received in c.
 </details>
 
 <details>
@@ -74,7 +74,7 @@ Fills n memory positions with the character received in c. Converts the received
 <p align="center">
     <img src="https://github.com/user-attachments/assets/20e974e5-a3b6-4ccb-a631-eb9cb5a0ef7a"/>
 </p>
-Function that clears n bytes of an array by writing '\0' in those positions. Converts the received array to a character array.
+Function that clears <b>n</b> bytes of an array by writing '\0' in those positions.
 </details>
 
 <details>
@@ -82,7 +82,7 @@ Function that clears n bytes of an array by writing '\0' in those positions. Con
 <p align="center">
     <img src="https://github.com/user-attachments/assets/64fea178-0df4-41ce-af9a-55cedfc21727"/>
 </p>
-Function that copies n bytes of memory from src to dst. The memory positions must not overlap. Returns a pointer to the destination.
+Function that copies <b>n</b> bytes of memory from <b>src</b> to <b>dst</b>. The memory positions must not overlap. Returns a pointer to the destination.
 </details>
 
 <details>
@@ -90,7 +90,7 @@ Function that copies n bytes of memory from src to dst. The memory positions mus
 <p align="center">
     <img src="https://github.com/user-attachments/assets/12c7186d-dc06-4241-ba89-6d5dd5016291"/>
 </p>
-Function that copies n bytes of memory from src to dst. It is used when we are not sure if the memory positions can overlap. Returns a pointer to the destination. If the destination is greater, it copies the values from n down to 1. If the destination is equal to or smaller than src, it copies the memory positions from 0 to n.
+Function that copies <b>n</b> bytes of memory from <b>src</b> to <b>dst</b>. It is used when we are not sure if the memory positions can overlap. Returns a pointer to the destination. If the destination is greater, it copies the values from <b>n</b> down to 1. If the destination is equal to or smaller than src, it copies the memory positions from 0 to <b>n</b>.
 </details>
 
 <details>
@@ -98,7 +98,7 @@ Function that copies n bytes of memory from src to dst. It is used when we are n
 <p align="center">
     <img src="https://github.com/user-attachments/assets/ac3ab1c7-2c26-4fde-b60e-4ada947c84cd"/>
 </p>
-Copies the string src to dest, receiving not only the length of the string but also the total size of the buffer (including the '\0'). Returns the total length of the string it tried to create.
+Copies the string <b>src</b> to <b>dest</b>, receiving not only the length of the string but also the total size of the buffer (including the '\0'). Returns the total length of the string it tried to create.
 </details>
 
 <details>
@@ -106,7 +106,7 @@ Copies the string src to dest, receiving not only the length of the string but a
 <p align="center">
     <img src="https://github.com/user-attachments/assets/d4ccdb6f-3002-40b6-ad26-98423dd5eccb"/>
 </p>
-Concatenates src and dst as long as there is available space in dst. Returns the total length of the string it tried to create (dst + src).
+Concatenates <b>src</b> and <b>dst</b> as long as there is available space in <b>dst</b>. Returns the total length of the string it tried to create (<b>dst + src</b>).
 </details>
 
 <details>
@@ -130,7 +130,7 @@ If it is an uppercase character, it returns its decimal value in lowercase.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/54184fd6-e66c-426a-9172-38647a993fbc"/>
 </p>
-Returns a pointer to the first position where the character c is found.
+Returns a pointer to the first position where the character <b>c</b> is found.
 </details>
 
 <details>
@@ -138,7 +138,7 @@ Returns a pointer to the first position where the character c is found.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/97e58668-d6e0-4f50-97ff-259f14959f66"/>
 </p>
-Returns a pointer to the last position where the character c is found.
+Returns a pointer to the last position where the character <b>c</b> is found.
 </details>
 
 <details>
@@ -146,7 +146,7 @@ Returns a pointer to the last position where the character c is found.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/043843bd-3ef3-4dc8-9b6f-e6db510726cf"/>
 </p>
-Compares two strings up to position n. If the first is greater, it returns a positive value with the difference between both; if the first is smaller, it returns a negative value with its difference; if they are equal, it returns 0.
+Compares two strings up to position <b>n</b>. If the first is greater, it returns a positive value with the difference between both; if the first is smaller, it returns a negative value with its difference; if they are equal, it returns 0.
 </details>
 
 <details>
@@ -154,7 +154,7 @@ Compares two strings up to position n. If the first is greater, it returns a pos
 <p align="center">
     <img src="https://github.com/user-attachments/assets/6f0b395f-c5d0-47a6-813f-43917db3a485"/>
 </p>
-Searches the first n bytes of the array s for the character c and returns a pointer to that memory position when found, or NULL if not found.
+Searches the first <b>n</b> bytes of the array <b>s</b> for the character <b>c</b> and returns a pointer to that memory position when found, or NULL if not found.
 </details>
 
 <details>
@@ -162,7 +162,7 @@ Searches the first n bytes of the array s for the character c and returns a poin
 <p align="center">
     <img src="https://github.com/user-attachments/assets/554798b0-e7b9-415f-bfeb-ff6ba738dfe5"/>
 </p>
-Compares the first n memory positions between the strings s1 and s2. The values present in these positions are interpreted as unsigned char. It returns a positive value if s1 is greater, a negative value if s1 is smaller, and zero if they are equal. It should use unsigned char* to avoid issues with negative values. It must be converted from const to char* and access the value to which the pointers point.
+Compares the first <b>n</b> memory positions between the strings <b>s1</b> and <b>s2</b>. The values present in these positions are interpreted as unsigned char. It returns a positive value if <b>s1</b> is greater, a negative value if <b>s1</b> is smaller, and zero if they are equal. It should use unsigned char* to avoid issues with negative values. It must be casted from const to char* and access the value to which the pointers point.
 </details>
 
 <details>
@@ -170,7 +170,7 @@ Compares the first n memory positions between the strings s1 and s2. The values 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/a4e522e6-f844-40c8-8de6-97d5f195736f"/>
 </p>
-Locates the first occurrence of the string little in the string big without exceeding the given len. If little is an empty string, it returns the string big. If little is not found in big, it returns NULL. If found, it returns a pointer to the first position of the string.
+Locates the first occurrence of the string <b>little</b> in the string <b>big</b> without exceeding the given <b>len</b>. If <b>little</b> is an empty string, it returns the string <b>big</b>. If <b>little</b> is not found in big, it returns NULL. If found, it returns a pointer to the first position of the string.
 </details>
 
 <details>
@@ -178,7 +178,7 @@ Locates the first occurrence of the string little in the string big without exce
 <p align="center">
     <img src="https://github.com/user-attachments/assets/4b12fbef-e6a2-4a3f-8a6f-e432698423f2"/>
 </p>
-Converts the elements of the string str into a number. Note that the limit of negative int is a value greater than the positive limit. Returns the obtained number.
+Converts the elements of the string <b>str</b> into a number. Note that the limit of negative int is a value greater than the positive limit. Returns the obtained number.
 </details>
 
 <details>
@@ -186,7 +186,7 @@ Converts the elements of the string str into a number. Note that the limit of ne
 <p align="center">
     <img src="https://github.com/user-attachments/assets/1c06aee8-33ec-4410-bdfe-19825de0e3a1"/>
 </p>
-Allocates memory for an array of nmemb elements of size bytes each. Returns a pointer to the allocated memory. If size is 0, the function will return a pointer that can be freed. The value 0 is assigned to all positions of the array.
+Allocates memory for an array of <b>n</b> elements of size bytes each. Returns a pointer to the allocated memory. If size is 0, the function will return a pointer that can be freed. The value 0 is assigned to all positions of the array.
 </details>
 
 <details>
@@ -194,7 +194,7 @@ Allocates memory for an array of nmemb elements of size bytes each. Returns a po
 <p align="center">
     <img src="https://github.com/user-attachments/assets/583b3e50-b213-477f-b9da-9429a43dce61"/>
 </p>
-Returns a pointer to a new string that is a duplicate of the string src. The memory allocated for the new string is defined through malloc. Returns NULL if there is not enough memory.
+Returns a pointer to a new string that is a duplicate of the string <b>src</b>. The memory allocated for the new string is defined through malloc. Returns NULL if there is not enough memory.
 </details>
 
 <details>
@@ -202,7 +202,7 @@ Returns a pointer to a new string that is a duplicate of the string src. The mem
 <p align="center">
     <img src="https://github.com/user-attachments/assets/f8c01ea7-2319-4d7e-9792-850a696ee471)"/>
 </p>
-Allocates memory with malloc and returns a string that starts at position start and has a maximum size of len. If s is NULL or start is greater than the length of s, or if len is 0, it creates a string that only contains '\0' and returns that string. If len is greater than the length of s minus start, we need to adjust len since there are not enough positions to write.
+Allocates memory with malloc and returns a string that starts at position <b>start</b> and has a maximum size of <b>len</b>. If <b>s</b> is NULL or <b>start</b> is greater than the length of <b>s</b>, or if <b>len</b> is 0, it creates a string that only contains '\0' and returns that string. If len is greater than the length of <b>s</b> minus <b>start</b>, we need to adjust <b>len</b> since there are not enough positions to write.
 </details>
 
 <details>
@@ -210,7 +210,7 @@ Allocates memory with malloc and returns a string that starts at position start 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/d1723727-08fe-4b07-852d-32f92f2faa8b"/>
 </p>
-Allocates memory with malloc and returns a new string that is the result of concatenating the string s1 with s2. There is no check for empty strings.
+Allocates memory with malloc and returns a new string that is the result of concatenating the string <b>s1</b> with <b>s2</b>. There is no check for empty strings.
 </details>
 
 <details>
@@ -218,7 +218,7 @@ Allocates memory with malloc and returns a new string that is the result of conc
 <p align="center">
     <img src="https://github.com/user-attachments/assets/eafb041a-35c3-4401-b692-3392179a767c"/>
 </p>
-Allocates memory with malloc and returns a copy of s1 with the characters from set removed. If either of the strings is empty, it returns NULL. It will look for characters in set in s1 and advance positions in s1 until it finds the first character that is not in set. The second loop searches from the end to the beginning until it finds if the last character is in set. It then calls substr to create a new function that starts at 0 and goes to the length of len.
+Allocates memory with malloc and returns a copy of <b>s1</b> with the characters from <b>set</b> removed. If either of the strings is empty, it returns NULL. It will look for characters in <b>set</b> in <b>s1</b> and advance positions in <b>s1</b> until it finds the first character that is not in set. The second loop searches from the end to the beginning until it finds if the last character is in set.
 </details>
 
 <details>
@@ -226,11 +226,12 @@ Allocates memory with malloc and returns a copy of s1 with the characters from s
 <p align="center">
     <img src="https://github.com/user-attachments/assets/f9bc272f-5787-4826-8a5b-59c7d33920a1"/>
 </p>
-Allocates memory with malloc and returns an array of strings that has been split using the separator defined by c. It begins by counting the number of words to allocate memory for them.
+Allocates memory with malloc and returns an array of strings that has been split using the separator defined by <b>c</b>.
 	<ol>
+	<li> It begins by counting the number of words to allocate memory for them.</li>
 	<li><b>Count Words( )</b> The first loop goes through the string, incrementing the pointer while it encounters the separator. When it no longer finds the separator, it increments the word count, and keeps incrementing the pointer until it finds the separator again. It returns the final count which is the number of words found.</b>
-	<li><b>Main Function( )</b> Allocates memory for the array of strings. Then calls the fill_array function to allocate memory for each individual string and copy the characters from s.</li>
-	<li><b>Create_array( )</b> In the first loop, it compares the number of words (passed as a parameter) with a new counter initialized at 0. While these values differ, the loop continues. It first advances the string index while equal to the separator. Then when it reaches non-separator characters, it counts the characters until the next separator or end of string. Then it allocates space for the new string. If memory allocation fails, it frees all previously allocated strings. If allocation succeeds, it calls fill_str to copy the characters from s into the new string. The loop continues until all words are written. Finally, it creates a string with '\0' at the end.
+	<li><b>ft_split( )</b> Allocates memory for the array of strings. Then calls the <b>fill_array( )</b> function to allocate memory for each individual string.</li>
+	<li><b>Create_array( )</b> In the first loop, it compares the number of words (passed as a parameter) with a new counter initialized at 0. While these values differ, the loop continues. It first advances the string index while equal to the separator. Then when it reaches non-separator characters, it counts the characters until the next separator or end of string. Then it allocates space for the new string. If memory allocation fails, it frees all previously allocated strings with <b>malloc_fails( )</b>. If allocation succeeds, it calls <b>fill_str( )</b> to copy the characters from s into the new string. The loop continues until all words are written. Finally, it creates a string with '\0' at the end.
 	</li>
 	</ol>
 </details>
@@ -240,7 +241,7 @@ Allocates memory with malloc and returns an array of strings that has been split
 <p align="center">
     <img src="https://github.com/user-attachments/assets/2f8918dd-c5bb-41ce-a691-8d166a052e83"/>
 </p>
-Allocates memory with malloc and returns a string containing the integer number passed as n. There is a function to allocate a malloc if zero, which returns just "0" and '\0'. It determines how many digits the number has by calling a helper function, storing the result in a variable. It puts the '\0' terminator at the end of the string. It then uses a loop counting downwards, writing the digits of the number into the string. If the input number is negative, it adds a minus sign at the beginning.
+Allocates memory with malloc and returns a string containing the integer number passed as <b>n</b>. There is a function to allocate a malloc if zero, which returns just "0" and '\0'. It determines how many digits the number has by calling a helper function, storing the result in a variable. It puts the '\0' terminator at the end of the string. It then uses a loop counting downwards, writing the digits of the number into the string. If the input number is negative, it adds a minus sign at the beginning.
 </details>
 
 <details>
@@ -248,7 +249,7 @@ Allocates memory with malloc and returns a string containing the integer number 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/1047517d-1281-44f9-b39b-63652d1f022a"/>
 </p>
-Applies a function f to each character of the string s. Returns a new string (allocated with malloc) containing the results of the modifications made by function f. First duplicates the string with strdup; if that fails, returns NULL. Then applies the function f to each character of the new string, and finally returns the modified new string.
+Applies a function <b>f</b> to each character of the string <b>s</b>. Returns a new string (allocated with malloc) containing the results of the modifications made by function <b>f</b>. First duplicates the string with strdup; if that fails, returns NULL. Then applies the function <b>f</b> to each character of the new string, and finally returns the modified new string.
 </details>
 
 <details>
@@ -256,7 +257,7 @@ Applies a function f to each character of the string s. Returns a new string (al
 <p align="center">
     <img src="https://github.com/user-attachments/assets/152f8ed0-18ae-4161-83a0-0d121792e141"/>
 </p>
-Applies a function f to each character of the string s. The function receives the index of the character and a pointer to the character, allowing in-place modifications.
+Applies a function <b>f</b> to each character of the string <b>s</b>. The function receives the index of the character and a pointer to the character, allowing in-place modifications.
 </details>
 
 <details>
@@ -264,7 +265,7 @@ Applies a function f to each character of the string s. The function receives th
 <p align="center">
     <img src="https://github.com/user-attachments/assets/a0b8bb3c-5e3b-4cf6-8d09-9176e9f06b34"/>
 </p>
-Writes the character c to the file descriptor fd.
+Writes the character <b>c</b> to the file descriptor <b>fd</b>.
 </details>
 
 <details>
@@ -272,7 +273,7 @@ Writes the character c to the file descriptor fd.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/a3049e8a-b249-4383-8ee9-41641400fcb5"/>
 </p>
-Writes the string s to the file descriptor fd.
+Writes the string <b>s</b> to the file descriptor <b>fd</b>.
 </details>
 
 <details>
@@ -280,7 +281,7 @@ Writes the string s to the file descriptor fd.
 <p align="center">
     <img src="https://github.com/user-attachments/assets/1bf100cb-bf95-453b-9773-61b2506d7d66"/>
 </p>
-Writes the string s followed by a newline character ('\n') to the file descriptor fd.
+Writes the string <b>s</b> followed by a newline character ('\n') to the file descriptor <b>fd</b>.
 </details>
 
 <details>
@@ -288,7 +289,7 @@ Writes the string s followed by a newline character ('\n') to the file descripto
 <p align="center">
     <img src="https://github.com/user-attachments/assets/8f69da62-96d1-498e-b1f6-592f1f042224"/>
 </p>
-Writes the integer number n to the file descriptor fd.
+Writes the integer number <b>n</b> to the file descriptor <b>fd</b>.
 </details>
 
 ### Bonus
@@ -297,7 +298,7 @@ Writes the integer number n to the file descriptor fd.
 <p align="center">
     <img src=""/>
 </p>
-Allocates memory with malloc and creates a new list node of a certain size. The variable content is initialized with the value passed as parameter content. The variable next is initialized to NULL. Returns the new node.
+Allocates memory with malloc and creates a new list node of a certain size. The variable <b>content</b> is initialized with the value passed as parameter <b>content</b>. The variable <b>next</b> is initialized to NULL. Returns the new node.
 </details>
 
 <details>
@@ -305,7 +306,7 @@ Allocates memory with malloc and creates a new list node of a certain size. The 
 <p align="center">
     <img src=""/>
 </p>
-Adds a new node at the beginning of the list. Receives lst, a pointer to the first node of the list, and adds the node new at the front.
+Adds a new node at the beginning of the list. Receives <b>lst</b>, a pointer to the first node of the list and adds the node new at the front.
 </details>
 
 <details>
@@ -313,7 +314,7 @@ Adds a new node at the beginning of the list. Receives lst, a pointer to the fir
 <p align="center">
     <img src=""/>
 </p>
-Counts the number of elements in the list lst and returns that number.
+Counts the number of elements on the list <b>lst</b> and returns that number.
 </details>
 
 <details>
@@ -329,7 +330,7 @@ Returns the last node of the list.
 <p align="center">
     <img src=""/>
 </p>
-Adds a new node at the end of the list. Receives lst, a pointer to the last node of the list, and adds the node new at the back.
+Adds a new node at the end of the list. Receives <b>lst</b>, a pointer to the last node of the list, and adds the node <b>new</b> at the back.
 </details>
 
 <details>
@@ -337,7 +338,7 @@ Adds a new node at the end of the list. Receives lst, a pointer to the last node
 <p align="center">
     <img src=""/>
 </p>
-Receives as a parameter lst, a node that will be deleted. Uses the function del to delete the content and frees its memory using free.
+Receives as a parameter <b>lst</b>, a node that will be deleted. Uses the function del to delete the content and frees its memory using free.
 </details>
 
 <details>
@@ -345,7 +346,7 @@ Receives as a parameter lst, a node that will be deleted. Uses the function del 
 <p align="center">
     <img src=""/>
 </p>
-Receives as a parameter lst, a pointer to a node that will be deleted. Deletes all successor nodes using the function del and frees the allocated memory using free. In the end, the pointer to the list should be set to NULL.
+Receives as a parameter <b>lst</b>, a pointer to a node that will be deleted. Deletes all successor nodes using the function <b>del</b> and frees the allocated memory using free. In the end, the pointer to the list should be set to NULL.
 </details>
 
 <details>
@@ -353,7 +354,7 @@ Receives as a parameter lst, a pointer to a node that will be deleted. Deletes a
 <p align="center">
     <img src=""/>
 </p>
-Receives the list lst and applies the function f to all elements contained in it.
+Receives the list <b>lst</b> and applies the function <b>f</b> to all elements contained in it.
 </details>
 
 <details>
@@ -361,5 +362,5 @@ Receives the list lst and applies the function f to all elements contained in it
 <p align="center">
     <img src=""/>
 </p>
-Receives the list lst and applies the function f to all elements contained in it. Creates a new list that will contain the results of applying function f. If any memory allocation fails, it uses del to free the allocated content of the created nodes.
+Receives the list <b>lst</b> and applies the function <b>f</b> to all elements contained in it. Creates a new list that will contain the results of applying function <b>f</b>. If any memory allocation fails, it uses <b>del</b> to free the allocated content of the created nodes.
 </details>
