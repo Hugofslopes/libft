@@ -106,37 +106,37 @@ Searches the first n bytes of the array s for the character c and returns a poin
 <details>
     <summary><b>memcmp:</b> int ft_memcmp(const void *s1, const void *s2, size_t n)</summary>
 Compares the first n memory positions between the strings s1 and s2. The values present in these positions are interpreted as unsigned char. It returns a positive value if s1 is greater, a negative value if s1 is smaller, and zero if they are equal. It should use unsigned char* to avoid issues with negative values. It must be converted from const to char* and access the value to which the pointers point.
-</details
+</details>
 
 <details>
     <summary><b>strnstr:</b> char *ft_strnstr(const char *big, const char *little, size_t len)</summary>
 Locates the first occurrence of the string little in the string big without exceeding the given len. If little is an empty string, it returns the string big. If little is not found in big, it returns NULL. If found, it returns a pointer to the first position of the string.
-</details
+</details>
 
 <details>
     <summary><b>atoi:</b> int ft_atoi(const char *str)</summary>
 Converts the elements of the string str into a number. Note that the limit of negative int is a value greater than the positive limit. Returns the obtained number.
-</details
+</details>
 
 <details>
     <summary><b>calloc:</b> void *ft_calloc(size_t nmemb, size_t size)</summary>
 Allocates memory for an array of nmemb elements of size bytes each. Returns a pointer to the allocated memory. If size is 0, the function will return a pointer that can be freed. The value 0 is assigned to all positions of the array.
-</details
+</details>
 
 <details>
     <summary><b>strdup:</b> char *ft_strdup(char *src)</summary>
 Returns a pointer to a new string that is a duplicate of the string src. The memory allocated for the new string is defined through malloc. Returns NULL if there is not enough memory.
-</details
+</details>
 
 <details>
     <summary><b>substr:</b> char *ft_substr(char const *s, unsigned int start, size_t len)</summary>
 Allocates memory with malloc and returns a string that starts at position start and has a maximum size of len. If s is NULL or start is greater than the length of s, or if len is 0, it creates a string that only contains '\0' and returns that string. If len is greater than the length of s minus start, we need to adjust len since there are not enough positions to write.
-</details
+</details>
 
 <details>
     <summary><b>strjoin:</b> char *ft_strjoin(char const *s1, char const *s2)</summary>
 Allocates memory with malloc and returns a new string that is the result of concatenating the string s1 with s2. There is no check for empty strings.
-</details
+</details>
 
 
 strtrim: char *ft_strtrim(char const *s1, char const *set);
@@ -174,44 +174,44 @@ Writes the integer number n to the file descriptor fd.
 <details>
     <summary><b>lstnew:</b> t_list *ft_lstnew(void *content)</summary>
 Allocates memory with malloc and creates a new list node of a certain size. The variable content is initialized with the value passed as parameter content. The variable next is initialized to NULL. Returns the new node.
-</details
+</details>
 
 <details>
     <summary><b>lstadd_front:</b> void ft_lstadd_front(t_list **lst, t_list *new)</summary>
 Adds a new node at the beginning of the list. Receives lst, a pointer to the first node of the list, and adds the node new at the front.
-</details
+</details>
 
 <details>
     <summary><b>lstsize:</b> int ft_lstsize(t_list *lst)</summary>
 Counts the number of elements in the list lst and returns that number.
-</details
+</details>
 
 <details>
     <summary><b>lstlast:</b> t_list *ft_lstlast(t_list *lst)</summary>
 Returns the last node of the list.
-</details
+</details>
 
 <details>
     <summary><b>lstadd_back:</b> void ft_lstadd_back(t_list **lst, t_list *new)</summary>
 Adds a new node at the end of the list. Receives lst, a pointer to the last node of the list, and adds the node new at the back.
-</details
+</details>
 
 <details>
     <summary><b>lstdelone:</b> void ft_lstdelone(t_list *lst, void (*del)(void*))</summary>
 Receives as a parameter lst, a node that will be deleted. Uses the function del to delete the content and frees its memory using free.
-</details
+</details>
 
 <details>
     <summary><b>lstclear:</b> void ft_lstclear(t_list **lst, void (*del)(void*))</summary>
 Receives as a parameter lst, a pointer to a node that will be deleted. Deletes all successor nodes using the function del and frees the allocated memory using free. In the end, the pointer to the list should be set to NULL.
-</details
+</details>
 
 <details>
     <summary><b>lstiter:</b> void ft_lstiter(t_list *lst, void (*f)(void *))</summary>
 Receives the list lst and applies the function f to all elements contained in it.
-</details
+</details>
 
 <details>
     <summary><b>lstmap:</b> t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))</summary>
 Receives the list lst and applies the function f to all elements contained in it. Creates a new list that will contain the results of applying function f. If any memory allocation fails, it uses del to free the allocated content of the created nodes.
-</details
+</details>
