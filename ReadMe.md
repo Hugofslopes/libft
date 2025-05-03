@@ -58,53 +58,86 @@ Function that clears n bytes of an array by writing '\0' in those positions. Con
 Function that copies n bytes of memory from src to dst. The memory positions must not overlap. Returns a pointer to the destination.
 </details>
 
-memmove: void *ft_memmove(void *dst, const void *src, size_t n);
+<details>
+    <summary><b>memmove:</b> void *ft_memmove(void *dst, const void *src, size_t n)</summary>
 Function that copies n bytes of memory from src to dst. It is used when we are not sure if the memory positions can overlap. Returns a pointer to the destination. If the destination is greater, it copies the values from n down to 1. If the destination is equal to or smaller than src, it copies the memory positions from 0 to n.
+</details>
 
-strlcpy: size_t ft_strlcpy(char *dest, char *src, size_t size);
+<details>
+    <summary><b>strlcpy:</b> size_t ft_strlcpy(char *dest, char *src, size_t size)</summary>
 Copies the string src to dest, receiving not only the length of the string but also the total size of the buffer (including the '\0'). Returns the total length of the string it tried to create.
+</details>
 
-strlcat: size_t ft_strlcat(char *dst, const char *src, size_t size);
+<details>
+    <summary><b>strlcat:</b> size_t ft_strlcat(char *dst, const char *src, size_t size)</summary>
 Concatenates src and dst as long as there is available space in dst. Returns the total length of the string it tried to create (dst + src).
+</details>
 
-toupper: int ft_toupper(int c);
+<details>
+    <summary><b>toupper:</b> int ft_toupper(int c)</summary>
 If it is a lowercase character, it returns its decimal value in uppercase.
+</details>
 
-tolower: int ft_tolower(int c);
+<details>
+    <summary><b>tolower:</b> int ft_tolower(int c)</summary>
 If it is an uppercase character, it returns its decimal value in lowercase.
+</details>
 
-strchr: char *ft_strchr(const char *s, int c);
+<details>
+    <summary><b>strchr:</b> char *ft_strchr(const char *s, int c)</summary>
 Returns a pointer to the first position where the character c is found.
+</details>
 
-strrchr: char *ft_strrchr(const char *s, int c);
+<details>
+    <summary><b>strrchr:</b> char *ft_strrchr(const char *s, int c)</summary>
 Returns a pointer to the last position where the character c is found.
+</details>
 
-strncmp: int ft_strncmp(const char *s1, const char *s2, size_t n);
+<details>
+    <summary><b>strncmp:</b> int ft_strncmp(const char *s1, const char *s2, size_t n)</summary>
 Compares two strings up to position n. If the first is greater, it returns a positive value with the difference between both; if the first is smaller, it returns a negative value with its difference; if they are equal, it returns 0.
+</details>
 
-memchr: void *ft_memchr(const void *s, int c, size_t n);
+<details>
+    <summary><b>memchr:</b> void *ft_memchr(const void *s, int c, size_t n)</summary>
 Searches the first n bytes of the array s for the character c and returns a pointer to that memory position when found, or NULL if not found.
+</details>
 
-memcmp: int ft_memcmp(const void *s1, const void *s2, size_t n);
+<details>
+    <summary><b>memcmp:</b> int ft_memcmp(const void *s1, const void *s2, size_t n)</summary>
 Compares the first n memory positions between the strings s1 and s2. The values present in these positions are interpreted as unsigned char. It returns a positive value if s1 is greater, a negative value if s1 is smaller, and zero if they are equal. It should use unsigned char* to avoid issues with negative values. It must be converted from const to char* and access the value to which the pointers point.
+</details
 
-strnstr: char *ft_strnstr(const char *big, const char *little, size_t len);
+<details>
+    <summary><b>strnstr:</b> char *ft_strnstr(const char *big, const char *little, size_t len)</summary>
 Locates the first occurrence of the string little in the string big without exceeding the given len. If little is an empty string, it returns the string big. If little is not found in big, it returns NULL. If found, it returns a pointer to the first position of the string.
+</details
 
-atoi: int ft_atoi(const char *str);
+<details>
+    <summary><b>atoi:</b> int ft_atoi(const char *str)</summary>
 Converts the elements of the string str into a number. Note that the limit of negative int is a value greater than the positive limit. Returns the obtained number.
+</details
 
-calloc: void *ft_calloc(size_t nmemb, size_t size);
+<details>
+    <summary><b>calloc:</b> void *ft_calloc(size_t nmemb, size_t size)</summary>
 Allocates memory for an array of nmemb elements of size bytes each. Returns a pointer to the allocated memory. If size is 0, the function will return a pointer that can be freed. The value 0 is assigned to all positions of the array.
+</details
 
-strdup: char *ft_strdup(char *src);
+<details>
+    <summary><b>strdup:</b> char *ft_strdup(char *src)</summary>
 Returns a pointer to a new string that is a duplicate of the string src. The memory allocated for the new string is defined through malloc. Returns NULL if there is not enough memory.
+</details
 
-substr: char *ft_substr(char const *s, unsigned int start, size_t len);
+<details>
+    <summary><b>substr:</b> char *ft_substr(char const *s, unsigned int start, size_t len)</summary>
 Allocates memory with malloc and returns a string that starts at position start and has a maximum size of len. If s is NULL or start is greater than the length of s, or if len is 0, it creates a string that only contains '\0' and returns that string. If len is greater than the length of s minus start, we need to adjust len since there are not enough positions to write.
+</details
 
-strjoin: char *ft_strjoin(char const *s1, char const *s2);
+<details>
+    <summary><b>strjoin:</b> char *ft_strjoin(char const *s1, char const *s2)</summary>
 Allocates memory with malloc and returns a new string that is the result of concatenating the string s1 with s2. There is no check for empty strings.
+</details
+
 
 strtrim: char *ft_strtrim(char const *s1, char const *set);
 Allocates memory with malloc and returns a copy of s1 with the characters from set removed. If either of the strings is empty, it returns NULL. It will look for characters in set in s1 and advance positions in s1 until it finds the first character that is not in set. The second loop searches from the end to the beginning until it finds if the last character is in set. It then calls substr to create a new function that starts at 0 and goes to the length of len.
@@ -136,7 +169,8 @@ Writes the string s followed by a newline character ('\n') to the file descripto
 
 putnbr_fd: void ft_putnbr_fd(int n, int fd);
 Writes the integer number n to the file descriptor fd.
-BONUS
+
+### Bonus
 
 lstnew: t_list *ft_lstnew(void *content);
 Allocates memory with malloc and creates a new list node of a certain size. The variable content is initialized with the value passed as parameter content. The variable next is initialized to NULL. Returns the new node.
