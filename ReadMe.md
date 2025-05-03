@@ -87,6 +87,9 @@ Function that copies n bytes of memory from src to dst. The memory positions mus
 
 <details>
     <summary><b>memmove</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/12c7186d-dc06-4241-ba89-6d5dd5016291"/>
+</p>
 Function that copies n bytes of memory from src to dst. It is used when we are not sure if the memory positions can overlap. Returns a pointer to the destination. If the destination is greater, it copies the values from n down to 1. If the destination is equal to or smaller than src, it copies the memory positions from 0 to n.
 </details>
 
