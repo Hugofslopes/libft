@@ -12,9 +12,8 @@
 </p>
 
 ## Code 
-### Mandatory
 <details>
-
+	<summary><b>MANDATORY</b></summary>
 <details>
 	<summary><b>isalpha</b></summary>
 <p align="center">
@@ -296,9 +295,8 @@ Writes the integer number <b>n</b> to the file descriptor <b>fd</b>.
 
 </details>
 
-### Bonus
 <details>
-
+	<summary><b>BONUS</b></summary>
 <details>
     <summary><b>lstnew</b></summary>
 <p align="center">
