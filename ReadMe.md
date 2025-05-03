@@ -183,31 +183,49 @@ Converts the elements of the string str into a number. Note that the limit of ne
 
 <details>
     <summary><b>calloc</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/1c06aee8-33ec-4410-bdfe-19825de0e3a1"/>
+</p>
 Allocates memory for an array of nmemb elements of size bytes each. Returns a pointer to the allocated memory. If size is 0, the function will return a pointer that can be freed. The value 0 is assigned to all positions of the array.
 </details>
 
 <details>
     <summary><b>strdup</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/583b3e50-b213-477f-b9da-9429a43dce61"/>
+</p>
 Returns a pointer to a new string that is a duplicate of the string src. The memory allocated for the new string is defined through malloc. Returns NULL if there is not enough memory.
 </details>
 
 <details>
     <summary><b>substr</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/f8c01ea7-2319-4d7e-9792-850a696ee471)"/>
+</p>
 Allocates memory with malloc and returns a string that starts at position start and has a maximum size of len. If s is NULL or start is greater than the length of s, or if len is 0, it creates a string that only contains '\0' and returns that string. If len is greater than the length of s minus start, we need to adjust len since there are not enough positions to write.
 </details>
 
 <details>
     <summary><b>strjoin</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/d1723727-08fe-4b07-852d-32f92f2faa8b"/>
+</p>
 Allocates memory with malloc and returns a new string that is the result of concatenating the string s1 with s2. There is no check for empty strings.
 </details>
 
 <details>
     <summary><b>strtrim</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/eafb041a-35c3-4401-b692-3392179a767c"/>
+</p>
 Allocates memory with malloc and returns a copy of s1 with the characters from set removed. If either of the strings is empty, it returns NULL. It will look for characters in set in s1 and advance positions in s1 until it finds the first character that is not in set. The second loop searches from the end to the beginning until it finds if the last character is in set. It then calls substr to create a new function that starts at 0 and goes to the length of len.
 </details>
 
 <details>
     <summary><b>split</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/f9bc272f-5787-4826-8a5b-59c7d33920a1"/>
+</p>
 Allocates memory with malloc and returns an array of strings that has been split using the separator defined by c. It begins by counting the number of words to allocate memory for them.
 	<ol>
 	<li><b>Count Words( )</b> The first loop goes through the string, incrementing the pointer while it encounters the separator. When it no longer finds the separator, it increments the word count, and keeps incrementing the pointer until it finds the separator again. It returns the final count which is the number of words found.</b>
@@ -219,81 +237,129 @@ Allocates memory with malloc and returns an array of strings that has been split
 
 <details>
     <summary><b>itoa</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/2f8918dd-c5bb-41ce-a691-8d166a052e83"/>
+</p>
 Allocates memory with malloc and returns a string containing the integer number passed as n. There is a function to allocate a malloc if zero, which returns just "0" and '\0'. It determines how many digits the number has by calling a helper function, storing the result in a variable. It puts the '\0' terminator at the end of the string. It then uses a loop counting downwards, writing the digits of the number into the string. If the input number is negative, it adds a minus sign at the beginning.
 </details>
 
 <details>
     <summary><b>strmapi</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/1047517d-1281-44f9-b39b-63652d1f022a"/>
+</p>
 Applies a function f to each character of the string s. Returns a new string (allocated with malloc) containing the results of the modifications made by function f. First duplicates the string with strdup; if that fails, returns NULL. Then applies the function f to each character of the new string, and finally returns the modified new string.
 </details>
 
 <details>
     <summary><b>striteri</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/152f8ed0-18ae-4161-83a0-0d121792e141"/>
+</p>
 Applies a function f to each character of the string s. The function receives the index of the character and a pointer to the character, allowing in-place modifications.
 </details>
 
 <details>
     <summary><b>putchar_fd</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/a0b8bb3c-5e3b-4cf6-8d09-9176e9f06b34"/>
+</p>
 Writes the character c to the file descriptor fd.
 </details>
 
 <details>
     <summary><b>putstr_fd</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/a3049e8a-b249-4383-8ee9-41641400fcb5"/>
+</p>
 Writes the string s to the file descriptor fd.
 </details>
 
 <details>
     <summary><b>putendl_fd</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/1bf100cb-bf95-453b-9773-61b2506d7d66"/>
+</p>
 Writes the string s followed by a newline character ('\n') to the file descriptor fd.
 </details>
 
 <details>
     <summary><b>putnbr_fd</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/8f69da62-96d1-498e-b1f6-592f1f042224"/>
+</p>
 Writes the integer number n to the file descriptor fd.
 </details>
 
 ### Bonus
 <details>
     <summary><b>lstnew</b></summary>
+<p align="center">
+    <img src=""/>
+</p>
 Allocates memory with malloc and creates a new list node of a certain size. The variable content is initialized with the value passed as parameter content. The variable next is initialized to NULL. Returns the new node.
 </details>
 
 <details>
     <summary><b>lstadd_front</b></summary>
+<p align="center">
+    <img src=""/>
+</p>
 Adds a new node at the beginning of the list. Receives lst, a pointer to the first node of the list, and adds the node new at the front.
 </details>
 
 <details>
     <summary><b>lstsize</b></summary>
+<p align="center">
+    <img src=""/>
+</p>
 Counts the number of elements in the list lst and returns that number.
 </details>
 
 <details>
     <summary><b>lstlast</b></summary>
+<p align="center">
+    <img src=""/>
+</p>
 Returns the last node of the list.
 </details>
 
 <details>
     <summary><b>lstadd_back</b></summary>
+<p align="center">
+    <img src=""/>
+</p>
 Adds a new node at the end of the list. Receives lst, a pointer to the last node of the list, and adds the node new at the back.
 </details>
 
 <details>
     <summary><b>lstdelone</b></summary>
+<p align="center">
+    <img src=""/>
+</p>
 Receives as a parameter lst, a node that will be deleted. Uses the function del to delete the content and frees its memory using free.
 </details>
 
 <details>
     <summary><b>lstclear</b></summary>
+<p align="center">
+    <img src=""/>
+</p>
 Receives as a parameter lst, a pointer to a node that will be deleted. Deletes all successor nodes using the function del and frees the allocated memory using free. In the end, the pointer to the list should be set to NULL.
 </details>
 
 <details>
     <summary><b>lstiter</b></summary>
+<p align="center">
+    <img src=""/>
+</p>
 Receives the list lst and applies the function f to all elements contained in it.
 </details>
 
 <details>
     <summary><b>lstmap</b></summary>
+<p align="center">
+    <img src=""/>
+</p>
 Receives the list lst and applies the function f to all elements contained in it. Creates a new list that will contain the results of applying function f. If any memory allocation fails, it uses del to free the allocated content of the created nodes.
 </details>
