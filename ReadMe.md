@@ -115,6 +115,9 @@ Locates the first occurrence of the string little in the string big without exce
 
 <details>
     <summary><b>atoi:</b> int ft_atoi(const char *str)</summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/996c4b55-4d50-49ec-bb76-7c606134f352"/>
+</p>
 Converts the elements of the string str into a number. Note that the limit of negative int is a value greater than the positive limit. Returns the obtained number.
 </details>
 
