@@ -17,6 +17,7 @@ Each function has a brief description of what it is and what it does. The more c
 </p> 
 <details>
 	<summary><b>MANDATORY</b></summary>
+<br>
 <details>
 	<summary><b>isalpha</b></summary>
 <p align="center">
@@ -300,6 +301,7 @@ Writes the integer number <b>n</b> to the file descriptor <b>fd</b>.
 
 <details>
 	<summary><b>BONUS</b></summary>
+<br>
 <details>
     <summary><b>lstnew</b></summary>
 <p align="center">
