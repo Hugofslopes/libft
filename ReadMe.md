@@ -159,11 +159,17 @@ Searches the first n bytes of the array s for the character c and returns a poin
 
 <details>
     <summary><b>memcmp</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/554798b0-e7b9-415f-bfeb-ff6ba738dfe5"/>
+</p>
 Compares the first n memory positions between the strings s1 and s2. The values present in these positions are interpreted as unsigned char. It returns a positive value if s1 is greater, a negative value if s1 is smaller, and zero if they are equal. It should use unsigned char* to avoid issues with negative values. It must be converted from const to char* and access the value to which the pointers point.
 </details>
 
 <details>
     <summary><b>strnstr</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/a4e522e6-f844-40c8-8de6-97d5f195736f"/>
+</p>
 Locates the first occurrence of the string little in the string big without exceeding the given len. If little is an empty string, it returns the string big. If little is not found in big, it returns NULL. If found, it returns a pointer to the first position of the string.
 </details>
 
