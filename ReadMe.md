@@ -111,31 +111,49 @@ Concatenates src and dst as long as there is available space in dst. Returns the
 
 <details>
     <summary><b>toupper</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/6975bd5a-cfc3-4328-aa74-c9d67704e65a"/>
+</p>
 If it is a lowercase character, it returns its decimal value in uppercase.
 </details>
 
 <details>
     <summary><b>tolower</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/5a1c9010-85aa-4d4a-9447-843597f2adbf"/>
+</p>
 If it is an uppercase character, it returns its decimal value in lowercase.
 </details>
 
 <details>
     <summary><b>strchr</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/54184fd6-e66c-426a-9172-38647a993fbc"/>
+</p>
 Returns a pointer to the first position where the character c is found.
 </details>
 
 <details>
     <summary><b>strrchr</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/97e58668-d6e0-4f50-97ff-259f14959f66"/>
+</p>
 Returns a pointer to the last position where the character c is found.
 </details>
 
 <details>
     <summary><b>strncmp</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/043843bd-3ef3-4dc8-9b6f-e6db510726cf"/>
+</p>
 Compares two strings up to position n. If the first is greater, it returns a positive value with the difference between both; if the first is smaller, it returns a negative value with its difference; if they are equal, it returns 0.
 </details>
 
 <details>
     <summary><b>memchr</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/6f0b395f-c5d0-47a6-813f-43917db3a485"/>
+</p>
 Searches the first n bytes of the array s for the character c and returns a pointer to that memory position when found, or NULL if not found.
 </details>
 
