@@ -16,7 +16,7 @@
 <details>
     <summary><b>isalpha</b></summary>
 <p align="center">
-    <img src="(https://github.com/user-attachments/assets/452f3d8e-588c-49fd-b49e-f112aa8d2b91"/>
+    <img src="https://github.com/user-attachments/assets/452f3d8e-588c-49fd-b49e-f112aa8d2b91"/>
 </p>
 If c is a character, it returns its value in decimal.
 </details>
