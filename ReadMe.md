@@ -171,30 +171,47 @@ putnbr_fd: void ft_putnbr_fd(int n, int fd);
 Writes the integer number n to the file descriptor fd.
 
 ### Bonus
-
-lstnew: t_list *ft_lstnew(void *content);
+<details>
+    <summary><b>lstnew:</b> t_list *ft_lstnew(void *content)</summary>
 Allocates memory with malloc and creates a new list node of a certain size. The variable content is initialized with the value passed as parameter content. The variable next is initialized to NULL. Returns the new node.
+</details
 
-lstadd_front: void ft_lstadd_front(t_list **lst, t_list *new);
+<details>
+    <summary><b>lstadd_front:</b> void ft_lstadd_front(t_list **lst, t_list *new)</summary>
 Adds a new node at the beginning of the list. Receives lst, a pointer to the first node of the list, and adds the node new at the front.
+</details
 
-lstsize: int ft_lstsize(t_list *lst);
+<details>
+    <summary><b>lstsize:</b> int ft_lstsize(t_list *lst)</summary>
 Counts the number of elements in the list lst and returns that number.
+</details
 
-lstlast: t_list *ft_lstlast(t_list *lst);
+<details>
+    <summary><b>lstlast:</b> t_list *ft_lstlast(t_list *lst)</summary>
 Returns the last node of the list.
+</details
 
-lstadd_back: void ft_lstadd_back(t_list **lst, t_list *new);
+<details>
+    <summary><b>lstadd_back:</b> void ft_lstadd_back(t_list **lst, t_list *new)</summary>
 Adds a new node at the end of the list. Receives lst, a pointer to the last node of the list, and adds the node new at the back.
+</details
 
-lstdelone: void ft_lstdelone(t_list *lst, void (*del)(void*));
+<details>
+    <summary><b>lstdelone:</b> void ft_lstdelone(t_list *lst, void (*del)(void*))</summary>
 Receives as a parameter lst, a node that will be deleted. Uses the function del to delete the content and frees its memory using free.
+</details
 
-lstclear: void ft_lstclear(t_list **lst, void (*del)(void*));
+<details>
+    <summary><b>lstclear:</b> void ft_lstclear(t_list **lst, void (*del)(void*))</summary>
 Receives as a parameter lst, a pointer to a node that will be deleted. Deletes all successor nodes using the function del and frees the allocated memory using free. In the end, the pointer to the list should be set to NULL.
+</details
 
-lstiter: void ft_lstiter(t_list *lst, void (*f)(void *));
+<details>
+    <summary><b>lstiter:</b> void ft_lstiter(t_list *lst, void (*f)(void *))</summary>
 Receives the list lst and applies the function f to all elements contained in it.
+</details
 
-lstmap: t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+<details>
+    <summary><b>lstmap:</b> t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))</summary>
 Receives the list lst and applies the function f to all elements contained in it. Creates a new list that will contain the results of applying function f. If any memory allocation fails, it uses del to free the allocated content of the created nodes.
+</details
