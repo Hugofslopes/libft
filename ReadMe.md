@@ -31,6 +31,9 @@ If c is a digit, it returns its value in decimal.
 
 <details>
     <summary><b>isalnum</b></summary>
+	<p align="center">
+    <img src="https://github.com/user-attachments/assets/518078bb-6989-4565-83a1-301fc6164d0e"/>
+</p>
 If c is a digit or a character, it returns its value in decimal.
 </details>
 
