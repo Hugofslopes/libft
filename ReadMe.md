@@ -95,6 +95,9 @@ Function that copies n bytes of memory from src to dst. It is used when we are n
 
 <details>
     <summary><b>strlcpy</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/ac3ab1c7-2c26-4fde-b60e-4ada947c84cd"/>
+</p>
 Copies the string src to dest, receiving not only the length of the string but also the total size of the buffer (including the '\0'). Returns the total length of the string it tried to create.
 </details>
 
