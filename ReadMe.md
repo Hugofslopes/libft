@@ -16,7 +16,7 @@
 Each function has a brief description of what it is and what it does. The more complex functions, which have more intricate code are explained in detail.
 </p> 
 <details>
-	<summary align="center">><b>MANDATORY</b></summary>
+	<summary align="center"> <b>MANDATORY</b></summary>
 <br>
 <details>
 	<summary><b>isalpha</b></summary>
