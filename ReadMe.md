@@ -47,6 +47,9 @@ If c belongs to the ASCII table, it returns its value in decimal.
 
 <details>
     <summary><b>isprint</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/e456327e-1f83-4e6d-863b-6e947f703ee0"/>
+</p>
 If c is a character that can be printed (greater than 32 and less than 127), it returns its value.
 </details>
 
