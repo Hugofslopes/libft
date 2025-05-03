@@ -23,6 +23,9 @@ If c is a character, it returns its value in decimal.
 
 <details>
     <summary><b>isdigit</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/014d5bc9-2139-4b14-a16f-d79e60a54d54"/>
+</p>
 If c is a digit, it returns its value in decimal.
 </details>
 
