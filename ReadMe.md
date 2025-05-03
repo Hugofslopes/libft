@@ -138,37 +138,56 @@ Allocates memory with malloc and returns a string that starts at position start 
 Allocates memory with malloc and returns a new string that is the result of concatenating the string s1 with s2. There is no check for empty strings.
 </details>
 
-
-strtrim: char *ft_strtrim(char const *s1, char const *set);
+<details>
+    <summary><b>strtrim:</b> char *ft_strtrim(char const *s1, char const *set)</summary>
 Allocates memory with malloc and returns a copy of s1 with the characters from set removed. If either of the strings is empty, it returns NULL. It will look for characters in set in s1 and advance positions in s1 until it finds the first character that is not in set. The second loop searches from the end to the beginning until it finds if the last character is in set. It then calls substr to create a new function that starts at 0 and goes to the length of len.
+</details>
 
-split: char **ft_split(char const *s, char c);
+<details>
+    <summary><b>split:</b> char **ft_split(char const *s, char c)</summary>
 Allocates memory with malloc and returns an array of strings that has been split using the separator defined by c. It begins by counting the number of words to allocate memory for them.
+	<ol>
+	<li>Count Words: The first loop goes through the string, incrementing the pointer while it encounters the separator. When it no longer finds the separator, it increments the word count, and keeps incrementing the pointer until it finds the separator again. It returns the final count which is the number of words found.</b>
+	<li>Main Function: Allocates memory for the array of strings. Then calls the fill_array function to allocate memory for each individual string and copy the characters from s.</li>
+	<li>create_array: In the first loop, it compares the number of words (passed as a parameter) with a new counter initialized at 0. While these values differ, the loop continues. It first advances the string index while equal to the separator. Then when it reaches non-separator characters, it counts the characters until the next separator or end of string. Then it allocates space for the new string. If memory allocation fails, it frees all previously allocated strings. If allocation succeeds, it calls fill_str to copy the characters from s into the new string. The loop continues until all words are written. Finally, it creates a string with '\0' at the end.
+	</li>
+	</ol>
+</details>
 
-    Count Words: The first loop goes through the string, incrementing the pointer while it encounters the separator. When it no longer finds the separator, it increments the word count, and keeps incrementing the pointer until it finds the separator again. It returns the final count which is the number of words found.
-    Main Function: Allocates memory for the array of strings. Then calls the fill_array function to allocate memory for each individual string and copy the characters from s.
-    create_array: In the first loop, it compares the number of words (passed as a parameter) with a new counter initialized at 0. While these values differ, the loop continues. It first advances the string index while equal to the separator. Then when it reaches non-separator characters, it counts the characters until the next separator or end of string. Then it allocates space for the new string. If memory allocation fails, it frees all previously allocated strings. If allocation succeeds, it calls fill_str to copy the characters from s into the new string. The loop continues until all words are written. Finally, it creates a string with '\0' at the end.
-
-itoa: char *ft_itoa(int n);
+<details>
+    <summary><b>itoa:</b> char *ft_itoa(int n)</summary>
 Allocates memory with malloc and returns a string containing the integer number passed as n. There is a function to allocate a malloc if zero, which returns just "0" and '\0'. It determines how many digits the number has by calling a helper function, storing the result in a variable. It puts the '\0' terminator at the end of the string. It then uses a loop counting downwards, writing the digits of the number into the string. If the input number is negative, it adds a minus sign at the beginning.
+</details>
 
-strmapi: char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+<details>
+    <summary><b>strmapi:</b> char *ft_strmapi(char const *s, char (*f)(unsigned int, char))</summary>
 Applies a function f to each character of the string s. Returns a new string (allocated with malloc) containing the results of the modifications made by function f. First duplicates the string with strdup; if that fails, returns NULL. Then applies the function f to each character of the new string, and finally returns the modified new string.
+</details>
 
-striteri: void ft_striteri(char *s, void (*f)(unsigned int, char*));
+<details>
+    <summary><b>striteri:</b> void ft_striteri(char *s, void (*f)(unsigned int, char*))</summary>
 Applies a function f to each character of the string s. The function receives the index of the character and a pointer to the character, allowing in-place modifications.
+</details>
 
-putchar_fd: void ft_putchar_fd(char c, int fd);
+<details>
+    <summary><b>putchar_fd:</b> void ft_putchar_fd(char c, int fd)</summary>
 Writes the character c to the file descriptor fd.
+</details>
 
-putstr_fd: void ft_putstr_fd(char *s, int fd);
+<details>
+    <summary><b>putstr_fd:</b> void ft_putstr_fd(char *s, int fd)</summary>
 Writes the string s to the file descriptor fd.
+</details>
 
-putendl_fd: void ft_putendl_fd(char *s, int fd);
+<details>
+    <summary><b>putendl_fd:</b> void ft_putendl_fd(char *s, int fd)</summary>
 Writes the string s followed by a newline character ('\n') to the file descriptor fd.
+</details>
 
-putnbr_fd: void ft_putnbr_fd(int n, int fd);
+<details>
+    <summary><b>putnbr_fd:</b> void ft_putnbr_fd(int n, int fd)</summary>
 Writes the integer number n to the file descriptor fd.
+</details>
 
 ### Bonus
 <details>
