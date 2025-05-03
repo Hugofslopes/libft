@@ -114,7 +114,7 @@ Locates the first occurrence of the string little in the string big without exce
 </details>
 
 <details>
-    <summary><b>atoi:</b> int ft_atoi(const char *str)</summary>
+    <summary><b>atoi</b></summary>
 <p align="center">
     <img src="https://github.com/user-attachments/assets/4b12fbef-e6a2-4a3f-8a6f-e432698423f2"/>
 </p>
