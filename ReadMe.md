@@ -31,7 +31,7 @@ If c is a digit, it returns its value in decimal.
 
 <details>
     <summary><b>isalnum</b></summary>
-	<p align="center">
+<p align="center">
     <img src="https://github.com/user-attachments/assets/518078bb-6989-4565-83a1-301fc6164d0e"/>
 </p>
 If c is a digit or a character, it returns its value in decimal.
@@ -39,6 +39,9 @@ If c is a digit or a character, it returns its value in decimal.
 
 <details>
     <summary><b>isascii</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/5b866d3d-f37b-4322-a835-67d8e01131fc"/>
+</p>
 If c belongs to the ASCII table, it returns its value in decimal.
 </details>
 
