@@ -103,6 +103,9 @@ Copies the string src to dest, receiving not only the length of the string but a
 
 <details>
     <summary><b>strlcat</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/d4ccdb6f-3002-40b6-ad26-98423dd5eccb"/>
+</p>
 Concatenates src and dst as long as there is available space in dst. Returns the total length of the string it tried to create (dst + src).
 </details>
 
