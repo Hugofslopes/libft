@@ -71,6 +71,9 @@ Fills n memory positions with the character received in c. Converts the received
 
 <details>
     <summary><b>bzero</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/20e974e5-a3b6-4ccb-a631-eb9cb5a0ef7a"/>
+</p>
 Function that clears n bytes of an array by writing '\0' in those positions. Converts the received array to a character array.
 </details>
 
