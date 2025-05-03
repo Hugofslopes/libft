@@ -11,7 +11,10 @@
     <b>Libft</b> is the first project from 42 School that aims to build functions library that will be used on upcoming projects.
 </p>
 
-## Code 
+## Code
+<p>
+Each function has a brief description of what it is and what it does. The more complex functions, which have more intricate code are explained in detail.
+</p> 
 <details>
 	<summary><b>MANDATORY</b></summary>
 <details>
