@@ -55,6 +55,9 @@ If c is a character that can be printed (greater than 32 and less than 127), it 
 
 <details>
     <summary><b>strlen</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/ab2e70be-c767-46c9-906a-bd94136f69cc"/>
+</p>
 Receives an char array and returns its length.
 </details>
 
