@@ -79,6 +79,9 @@ Function that clears n bytes of an array by writing '\0' in those positions. Con
 
 <details>
     <summary><b>memcpy</b></summary>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/64fea178-0df4-41ce-af9a-55cedfc21727"/>
+</p>
 Function that copies n bytes of memory from src to dst. The memory positions must not overlap. Returns a pointer to the destination.
 </details>
 
