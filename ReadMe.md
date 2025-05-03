@@ -364,3 +364,22 @@ Receives the list <b>lst</b> and applies the function <b>f</b> to all elements c
 </p>
 Receives the list <b>lst</b> and applies the function <b>f</b> to all elements contained in it. Creates a new list that will contain the results of applying function <b>f</b>. If any memory allocation fails, it uses <b>del</b> to free the allocated content of the created nodes.
 </details>
+
+## Code Setup
+<p>
+    <b>Step 1:</b> Clone the repository
+</p>
+
+    git clone https://github.com/Hugofslopes/libft
+
+<p>
+    <b>Step 2:</b> Open the terminal on the repo folder and write
+</p>
+
+    make
+
+<p>
+    <b>Step 3:</b> Run tests:
+</p>
+
+    make main ; ./main
